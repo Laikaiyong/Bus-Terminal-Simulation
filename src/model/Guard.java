@@ -19,7 +19,7 @@ public class Guard implements Runnable
             // foyer is full, guard proceed to block
             if(busTerminal.busTerminalSem.availablePermits()==0)
             {
-                System.out.println("Foyer is full.")
+                System.out.println("Foyer is full.");
                 busTerminal.block();
             }
         }
